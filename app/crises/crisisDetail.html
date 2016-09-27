@@ -1,0 +1,29 @@
+<div ng-if="$ctrl.crisis">
+    <!--<md-content flex id="content">-->
+        <h2>{{$ctrl.editName}}</h2>
+        <div>
+            <label>Id: </label>{{$ctrl.crisis.id}}
+        </div>
+        <div>
+            <label>Name: </label>
+            <input ng-model="$ctrl.editName" placeholder="name"/>
+        </div>
+
+        <md-button class="md-raised md-button md-ink-ripple" ng-click="$ctrl.save()" aria-label="Save">Save</md-button>
+        <md-button class="md-raised md-button md-ink-ripple" ng-click="$ctrl.cancel()" aria-label="Cancel">Cancel</md-button>
+    <!--</md-content>-->
+</div>
+
+<!--
+<div ng-if="$ctrl.crisis">
+    <h3>"{{$ctrl.editName}}"</h3>
+    <div>
+        <label>Id: </label>{{$ctrl.crisis.id}}</div>
+    <div>
+        <label>Name: </label>
+        <input ng-model="$ctrl.editName" placeholder="name"/>
+    </div>
+    <button ng-click="$ctrl.save()">Save</button>
+    <button ng-click="$ctrl.cancel()">Cancel</button>
+</div>
+-->

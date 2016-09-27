@@ -1,0 +1,26 @@
+
+<!--'<ul>\n' +-->
+    <!--'  <li ng-repeat="crisis in $ctrl.crises"\n' +-->
+    <!--'    ng-class="{ selected: $ctrl.isSelected(crisis) }"\n' +-->
+    <!--'    ng-click="$ctrl.onSelect(crisis)">\n' +-->
+    <!--// '    >' +-->
+    <!--// '  <a ng-link="[\'CrisisDetail\', { id: crisis.id }]">\n' +-->
+        <!--'    <span class="badge">{{crisis.id}}</span> {{crisis.name}}\n' +-->
+        <!--// '  </a>' +-->
+    <!--'  </li>\n' +-->
+    <!--'</ul>\n',-->
+
+<!--<div flex layout="row" data-ng-controller="HomeController as ul">-->
+<div flex layout="row">
+
+        <md-list>
+            <md-list-item ng-repeat="crisis in $ctrl.crises">
+                <md-button ng-click="$ctrl.onSelect(crisis)"
+                           ng-class="{ selected: $ctrl.isSelected(crisis) }">
+                    {{crisis.name}}
+                </md-button>
+            </md-list-item>
+        </md-list>
+
+
+</div>

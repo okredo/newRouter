@@ -1,0 +1,11 @@
+<div layout="row" layout-align="start">
+    <!--<md-list>-->
+        <md-list-item ng-repeat="config in $ctrl.configs">
+            <md-button ng-click="$ctrl.onSelect(config)"
+                       ng-class="{ selected: $ctrl.isSelected(config) }">
+                {{config.name}}
+            </md-button>
+        </md-list-item>
+    <!--</md-list>-->
+
+</div>

@@ -1,0 +1,12 @@
+<div layout="row" layout-align="start">
+
+    <md-list-item ng-repeat="hero in $ctrl.heroes">
+        <md-button ng-click="$ctrl.onSelect(hero)" ng-class="{ selected: $ctrl.isSelected(hero) }">
+            {{hero.name}}
+        </md-button>
+    </md-list-item>
+
+</div>
+<!--<div ng-repeat="hero in $ctrl.heroes" ng-class="{ selected: $ctrl.isSelected(hero) }">-->
+    <!--<a ng-link="['HeroDetail', {id: hero.id}]">{{hero.name}}</a>-->
+<!--</div>-->

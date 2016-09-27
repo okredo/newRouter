@@ -1,0 +1,22 @@
+<div ng-cloak>
+
+    <md-nav-bar md-selected-nav-item="DocCenter" nav-bar-aria-label="navigation links">
+        <!--<md-nav-item md-nav-href="\crisis-center\" name="CrisisCenter">Crisis Center</md-nav-item>-->
+        <md-nav-item md-nav-href="\doc-center\" name="DocCenter">Reference Guide</md-nav-item>
+        <md-nav-item md-nav-href="\console\" name="Console">API Console</md-nav-item>
+        <!--<md-nav-item md-nav-href="\heroes\" name="Heroes">Heroes</md-nav-item>-->
+        <md-nav-item md-nav-href="\apps\" name="Applications">Applications</md-nav-item>
+        <md-nav-item md-nav-href="\admin\" name="Admin">Administration</md-nav-item>
+        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+        <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+        <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+        -->
+    </md-nav-bar>
+
+    <md-content class="md-padding">
+        <ng-outlet></ng-outlet>
+    </md-content>
+
+</div>
+
+

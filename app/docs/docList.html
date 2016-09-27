@@ -1,0 +1,8 @@
+<div layout="row" layout-align="start">
+    <md-list-item ng-repeat="doc in $ctrl.docs">
+        <md-button ng-click="$ctrl.onSelect(doc)"
+                   ng-class="{ selected: $ctrl.isSelected(doc) }">
+            {{doc.name}}
+        </md-button>
+    </md-list-item>
+</div>

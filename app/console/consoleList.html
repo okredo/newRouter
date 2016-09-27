@@ -1,0 +1,11 @@
+<div layout="column" layout-align=" start">
+    <!--<md-list>-->
+        <md-list-item ng-repeat="cnsl in $ctrl.consoles">
+            <md-button ng-click="$ctrl.onSelect(cnsl)"
+                       ng-class="{ selected: $ctrl.isSelected(cnsl) }">
+                {{cnsl.name}}
+            </md-button>
+        </md-list-item>
+    <!--</md-list>-->
+
+</div>
